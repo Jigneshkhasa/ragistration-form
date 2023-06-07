@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ragistrationform.css">
+    <title>Ragistration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" placeholder="Full Name" required>
+            <br><br>
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">MALE</label><br><br>
+            <input type="radio" id="female" name="gender" required>
+            <label for="female">FEMALE</label><br><br>
+            <label for="age">Age:</label>
+            <select name="age" id="age" required>
+                <option value="">None</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+            </select><br><br>
+            <label for="mail">Email</label>
+            <input type="email" id="mail" name="mail" placeholder="Email"><br><br>
+            <label for="number">Mobile Number</label>
+            <input type="text" id="number" name="number" maxlength="10" placeholder="Mobile Number"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"><br><br>
+            <label for="technology" id="tech">Technology:</label>
+            <select name="technology" id="technology" required>
+                <option value="">None</option>
+                <option value="react">React</option>
+                <option value="shopify">Shopify</option>
+                <option value="bigcommers">Bigcommers</option>
+                <option value="wordpress">Wordpress</option>
+            </select><br><br>
+            <label for="hobby">Hobby</label>
+            <input type="text" id="hobby" placeholder="Hobby" required><br><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>

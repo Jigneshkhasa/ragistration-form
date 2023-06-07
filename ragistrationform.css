@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    justify-content: center;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #d7d1d1;
+    border-radius: 10px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+    background-color: #b8b2b2;
+    outline: none;
+}
+
+p {
+    font-size: 30px;
+    margin: 0;
+}
+
+label {
+    font-size: 20px;
+}
+
+select#age,
+select#technology {
+    font-size: 15px;
+    border-radius: 9px;
+    padding: 7px;
+}
+
+input[type="submit"] {
+    padding: 10px 60px;
+    font-size: 20px;
+    background-color: #9595dd;
+    border-radius: 10px;
+}
